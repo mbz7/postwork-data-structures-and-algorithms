@@ -1,11 +1,11 @@
 function selectionSort(arr) {
   const sorted = [];
 
-  while (arr.length > 3) {
+  console.log(arr);
+
+  while (arr.length > 0) {
     const min = Math.min(...arr);
     const idx = arr.indexOf(min);
-
-    console.log(min);
 
     sorted.push(min);
     arr.splice(idx, 1);
@@ -32,4 +32,12 @@ if (require.main === module) {
 module.exports = selectionSort;
 
 // Please add your pseudocode to this file
+
+// initialize an empty Array called sorted
+// loop through array (while loop) .length amount of time > 0
+//    store the minimun value of array using Math.min
+//    store the index of that minumum stored value
+//    remove the minumun value from the input array using splice
+//    push min onto sorted
+//  return sorted array
 // And a written explanation of your solution
