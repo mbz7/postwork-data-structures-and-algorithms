@@ -1,8 +1,6 @@
 function selectionSort(arr) {
   const sorted = [];
 
-  console.log(arr);
-
   while (arr.length > 0) {
     const min = Math.min(...arr);
     const idx = arr.indexOf(min);
@@ -10,7 +8,6 @@ function selectionSort(arr) {
     sorted.push(min);
     arr.splice(idx, 1);
   }
-
   return sorted;
 }
 
